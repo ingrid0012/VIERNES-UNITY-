@@ -1,0 +1,23 @@
+using UnityEngine;
+using TMPro;
+
+public class PlayerController : MonoBehaviour
+{
+    [SerializeField] float movementSpeed = 5f; //velocidad del personaje
+    float currentSpeed; //seguimiento al personaje
+    Rigidbody rb; //cuerpo rigido 
+    Vector3 direction; //direccion 
+
+    void Start()
+    {        
+       rb = GetComponent<Rigidbody>();
+       currentSpeed=movementSpeed;
+    }
+
+    void Update()
+    {
+    }
+    
+
+    
+}
